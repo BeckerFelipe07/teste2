@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolão do Campeão</title>
+    <link rel="stylesheet" href="campeao.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bolão do Campeão</h1>
+        <h3>Diz aí quem será o vencedor</h3>
+        <form action="index.html">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome">
+            <br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone">
+            <br><br>
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf">
+            <br><br>
+            <label for="imagem">Foto Cartão Frente e Verso:</label>
+            <input type="file" id="imagem" accept="image/*">
+            <br><br>
+            <div class="radio-group">
+                <div style="margin-right: 10%;">
+                <label><input type="radio" id="palmeiras" name="win_team" value="palmeiras">Palmeiras</label>
+            </div>
+                <label><input type="radio" id="corinthians" name="win_team" value="corinthians">Corinthians</label>
+            </div>
+
+            <br><br>
+            <button type="submit">Enviar Palpite</button>
+        </form>
+    </div>
+</body>
+</html>
